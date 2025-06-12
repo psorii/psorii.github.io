@@ -1,3 +1,35 @@
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 99999;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* 內容未加載完成前隱藏主要區域 */
+body:not(.loaded) main,
+body:not(.loaded) header,
+body:not(.loaded) footer,
+body:not(.loaded) #tokyo-time,
+body:not(.loaded) .cursor-dot,
+body:not(.loaded) .cursor-circle,
+body:not(.loaded) .click-effect-container,
+body:not(.loaded) canvas {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* 加載完成後淡出黑幕 */
+body.loaded #loading-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+}
+
 @font-face {
     font-family: 'pix16';
     src: url('https://psorii.github.io/unifont_jp-16.0.04.otf') format('opentype');
