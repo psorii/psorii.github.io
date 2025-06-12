@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'pix16';
-    src: url('./unifont_jp-16.0.04.otf') format('opentype');
+    src: url('https://psorii.github.io/unifont_jp-16.0.04.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
