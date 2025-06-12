@@ -24,7 +24,6 @@
   
   header,
   main,
-  footer,
   #tokyo-time {
     mix-blend-mode: difference;
     color: white;
@@ -170,19 +169,6 @@
     bottom: 0;
     left: 0;
     z-index: 9999;
-  }
-  
-  footer {
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    z-index: 90;
-  }
-  
-  footer p {
-    font-size: 0.5rem;
-    margin: 0;
   }
   
   #hydra-canvas {
