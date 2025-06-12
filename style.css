@@ -13,7 +13,6 @@
 /* 內容未加載完成前隱藏主要區域 */
 body:not(.loaded) main,
 body:not(.loaded) header,
-body:not(.loaded) footer,
 body:not(.loaded) #tokyo-time,
 body:not(.loaded) .cursor-dot,
 body:not(.loaded) .cursor-circle,
